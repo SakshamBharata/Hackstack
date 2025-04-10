@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackStack - AI Assistant</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            <div class="logo">
+                <h1>HackStack</h1>
+                <p>Where Innovation Meets Code</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/challenges">Challenges</a></li>
+                    <li><a href="/ai-assistant" class="active">AI Assistant</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="page-header">
+            <h1>AI Assistant</h1>
+            <p>Get help with your hackathon projects from our AI assistants</p>
+        </section>
+
+        <section class="ai-assistant-container">
+            <div class="ai-info">
+                <h2>Choose Your AI Assistant</h2>
+                <p>Select from our range of AI models to get the best help for your project:</p>
+                
+                <div class="ai-model-cards">
+                    <div class="ai-model-card" data-model="sarthaku">
+                        <div class="ai-model-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Sarthaku</h3>
+                        <p>Specialized in hackathon and tech advice</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2>Chat with <span id="selectedModel">AI Assistant</span></h2>
+                    <div class="model-selector">
+                        <select id="modelSelect">
+                            <option value="sarthaku">Sarthaku</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="chat-box" id="chatBox">
+                    <div class="message ai-message">
+                        <p>Hello! I'm your AI assistant. How can I help you with your hackathon project today?</p>
+                    </div>
+                </div>
+                
+                <div class="input-container">
+                    <textarea id="userInput" placeholder="Type your message here..."></textarea>
+                    <button id="sendButton">Send</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="ai-suggestions">
+            <h2>Suggested Questions</h2>
+            <div class="suggestions-grid">
+                <div class="suggestion-card" data-question="What are the best practices for winning a hackathon?">
+                    <h3>Hackathon Tips</h3>
+                    <p>What are the best practices for winning a hackathon?</p>
+                </div>
+                <div class="suggestion-card" data-question="How can I prepare for an AI hackathon challenge?">
+                    <h3>AI Preparation</h3>
+                    <p>How can I prepare for an AI hackathon challenge?</p>
+                </div>
+                <div class="suggestion-card" data-question="What technologies should I learn for blockchain hackathons?">
+                    <h3>Blockchain Tech</h3>
+                    <p>What technologies should I learn for blockchain hackathons?</p>
+                </div>
+                <div class="suggestion-card" data-question="How do I form an effective hackathon team?">
+                    <h3>Team Formation</h3>
+                    <p>How do I form an effective hackathon team?</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>HackStack</h2>
+                    <p>Where Innovation Meets Code</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/challenges">Challenges</a></li>
+                        <li><a href="/ai-assistant">AI Assistant</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HackStack. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html> 
